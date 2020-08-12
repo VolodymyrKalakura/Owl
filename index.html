@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__logo">
+				<img src="./images/logo.svg" alt="Logotype">
+			</div>
+			<div class="burger">
+				<div class="burger__icon"></div>
+			</div>
+			<div class="header__right">
+				<nav class="header__nav">
+					<ul class="header__menu menu">
+						<li class="menu__item"><a class="menu__link" href="#about">ПРО ШКОЛУ</a></li>
+						<li class="menu__item"><a class="menu__link flex" href="#">КУРСИ <i class="down"></i></a>
+							<ul class="submenu">
+								<li class="submenu__item"><a class="menu__link" href="#">Основні курси</a></li>
+								<li class="submenu__item"><a class="menu__link" href="#">Програми для дітей</a></li>
+								<li class="submenu__item"><a class="menu__link" href="#">Програми для підлітків</a></li>
+								<li class="submenu__item"><a class="menu__link" href="#">Короткі курси</a></li>
+								<li class="submenu__item"><a class="menu__link" href="#">Зустрічі</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a class="menu__link" href="#teacher">ЛЕКТОРИ</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">КОНТАКТИ</a></li>
+					</ul>
+				</nav>
+				<div class="header__social social">
+					<div class="social__link">
+						<a href="#"><svg style="fill:#ffffff;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"> <path d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76 C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427 h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z"></path> </svg></a>
+					</div>
+					<div class="social__link">
+						<a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="-455 257 48 48" enable-background="new -455 257 48 48" xml:space="preserve"> <path style="fill:#ffffff;" d="M-431,257.013c13.248,0,23.987,10.74,23.987,23.987s-10.74,23.987-23.987,23.987s-23.987-10.74-23.987-23.987 S-444.248,257.013-431,257.013z M-419.185,275.093c-0.25-1.337-1.363-2.335-2.642-2.458c-3.054-0.196-6.119-0.355-9.178-0.357 c-3.059-0.002-6.113,0.154-9.167,0.347c-1.284,0.124-2.397,1.117-2.646,2.459c-0.284,1.933-0.426,3.885-0.426,5.836 s0.142,3.903,0.426,5.836c0.249,1.342,1.362,2.454,2.646,2.577c3.055,0.193,6.107,0.39,9.167,0.39c3.058,0,6.126-0.172,9.178-0.37 c1.279-0.124,2.392-1.269,2.642-2.606c0.286-1.93,0.429-3.879,0.429-5.828C-418.756,278.971-418.899,277.023-419.185,275.093z M-433.776,284.435v-7.115l6.627,3.558L-433.776,284.435z"></path> </svg></a>
+					</div>
+					<div class="social__link">
+						<a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" xml:space="preserve"><path style="fill:#ffffff;" d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path> <path style="fill:#ffffff;" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path> <path style="fill:#ffffff;" d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path> </svg></a>
+					</div>
+				</div>
+				<a href="#" class="header__btn btn">Зареєструватись</a>
+			</div>
+		</div>
+		<div class="container">
+			<div id="about" class="header__content content">
+				<div class="content__text">
+					<h1 class="content__title">Актерский курс</h1>
+					<p class="content__subtite">Курс «Актёр» готовит амбициозных и талантливых творческих личностей для работы в кино и на  сцене театра. Работа над собой, над своими эмоциями откроет для вас новые возможности и перспективы.</p>
+					<p class="content__subtite">Этот курс подходит не только для людей причастных к актёрской деятельности, но и для тех кто готов совершенствовать себя, познавать новое, открываться, раскрепощаться и учиться быть лидером. На занятиях вы усовершенствуете свою речь, пластическую выразительность и воображение.</p>
+					<a class="content__btn btn" href="#program">Программа курса</a>
+				</div>
+				<div class="content__list">
+					<ul>
+						<li><img src="./images/list-bg1.svg" alt="">Прием заявок: с 1 августа</li>
+						<li><img src="./images/list-bg3.svg" alt="">Начало обучения : с 11 сентября</li>
+						<li><img src="./images/list-bg2.svg" alt="">Осталось : 6 мест</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="capability">
+			<div class="container">
+				<div class="capability__text">
+					<h2 class="capability__title">Цель та возможности:</h2>
+					<p class="capability__descr">Мы помогаем реализовать себя в актерской деятельности, развить высокий уровень мастерства, открыть новые возможности и исполнить мечту блистать на сцене театра и работать в киноиндустрии. </p>
+				</div>
+			</div>
+		</section>
+		<section class="author">
+			<div class="container">
+				<div class="author__wrapper">
+					<div class="author__img">
+						<img src="./images/author.jpg" alt="">
+					</div>
+					<div class="author__text">
+						<p class="author__descr"><span class="bold">Куратор курса - Юрий Радионов -</span> актёр театра и кино , режиссёр и хореограф. Единственный в Украине преподаватель техники , по которой обучаются актеры Америки и Европы «Rasa Box». Он объединил основы техник Станиславского , Чехова , Чаббак и Страсберга в одну единственную в своём роде технику преподавания.</p>
+						<p class="author__descr">Опыт работы в театрах:</p>
+						<ul class="author__list">
+							<li>⁃ Киевский академический театр юного зрителя на Липках. </li>
+							<li>⁃ Киевский академический театр драмы и комедии на левом берегу Днепра. </li>
+							<li>⁃ Дикий театр</li>
+							<li>Имеет независимый театральный проект «AMORphine»</li>
+							<li>Фильмография :</li>
+							<li>2019 – Наречена, що зникла.</li>
+							<li>2019 – Mein Kampf. </li>
+							<li>2019 – Хамелеон</li>
+							<li>2019 – Подорожники</li>
+							<li>2018 – Випробування</li>
+							<li>2017 – Завод</li>
+							<li>2017 – Інша кров</li>
+							<li>2016 – Вікно життя </li>
+							<li>2016 – Чудо за розкладом</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="program" class="program">
+			<div class="container">
+				<div class="program__wrapper">
+					<div class="program__head">
+						<h2 class="program__title">Программа курса</h2>
+						<p class="program__subtitle">Длительность - 4 месяца</p>
+						<p class="program__subtitle">График занятий - 2 раза в неделю (Вторник , Пятница с 20:00 до 22:00)</p>
+					</div>
+					<div class="program__info">
+						<ul>
+							<li>
+								<p class="left">Актерское мастерство </p>
+								<p class="right">17 занятий (основы техник Станиславского, Чехова, Чаббак, Страсберга и их отличия)</p>
+							</li>
+							<li>
+								<p class="left">Основы режиссуры и  основы драматургии </p>
+								<p class="right">5 занятий (действенный анализ, событийный ряд, виды конфликта)</p>
+							</li>
+							<li>
+								<p class="left">Сценическая речь  </p>
+								<p class="right">5 занятий (работа с монологом, описательной прозой и стихотворной формой)</p>
+							</li>
+							<li>
+								<p class="left">Пластика, хореография  </p>
+								<p class="right">5 занятий (этюды на оправданное молчание, архитектура тела)</p>
+							</li>
+							<li>
+								<p class="left">Мастер-классы от ведущих актеров, режиссёров и кастинг-директоров Украины</p>
+								<p class="right">-</p>
+							</li>
+							<li>
+								<p class="left">Актерское портфолио </p>
+								<p class="right">-</p>
+							</li>
+							<li>
+								<p class="left">Выпускной экзамен курса  </p>
+								<p class="right">спектакль на сцене</p>
+							</li>
+							<li>
+								<p class="left">Отбор в актерскую труппу  </p>
+								<p class="right">-</p>
+							</li>
+						</ul>
+					</div>
+					<a class="program__btn btn" href="#">ПРИЄДНАТИСЯ ДО КУРСУ</a>
+				</div>
+			</div>
+		</section>
+		<section id="teacher" class="teacher">
+			<div class="container">
+				<h2 class="teacer__title">Преподаватели</h2>
+				<div class="teacher__wrapper">
+					<div class="teacher__item">
+						<div class="teacher__img">
+							<img src="./images/2.jpg" alt="">
+						</div>
+						<div class="teacher__text">
+							<p><span class="bold">Шония Шорена Бежановна</span> - преподаватель сценической речи . Актриса театра и кино.</p>
+							<p class="bold">Опыт работы: </p>
+							<ul>
+								<li>- Национальный академический театр русской драмы им. Леси Украинки</li>
+								
+							</ul>
+							<p class="bold">Фильмография:</p>
+							<ul>
+								<li>2016 г - Подкидыш </li>
+								<li>2017 г - Спецы</li>
+								<li>2019 г - Любовь без памяти </li>
+								<li>2019 г - Ни шагу назад</li>
+								<li>2019 г- Подкидыш </li>
+								<li>2019 г - Тайная любовь </li>
+								<li>2020 г - Акушерка</li>
+								<li>2020 г - Ни шагу назад 2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="teacher__item">
+						<div class="teacher__img">
+							<img src="./images/1.jpg" alt="">
+						</div>
+						<div class="teacher__text">
+							<p><span class="bold">Алексей Скляренко</span> - преподаватель сценического движения. Актёр театра и кино, режиссёр, хореограф.</p>
+							<p class="bold">Опыт работы в театрах: </p>
+							<ul>
+								<li>- Театр Романа Виктюка </li>
+								<li>- Киевский театр «Сузір’я»</li>
+								<li>- Киевский театр на Левом берегу Днепра </li>
+							</ul>
+							<p class="bold">Фильмография:</p>
+							<ul>
+								<li>2000 г- 24 часа</li>
+								<li>2001 г- Леди Босс</li>
+								<li>2001 г-Львиная доля</li>
+								<li>2002 г- Мужская работа 2</li>
+								<li>2007 г- Человек без пистолета </li>
+								<li>2010 г-Химик</li>
+								<li>2013 г-Женский доктор 2</li>
+								<li>2014 г-Пока станица спит</li>
+								<li>2015 г-Никонов и Ко</li>
+								<li>2017 г-Ментовские войны.Одесса </li>
+								<li>2020 г-Нормандия -Неман</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<div class="container">
+				<h2 class="reviews__title">Отзывы</h2>
+				<div class="reviews__slider slider">
+					<div class="slider__item">
+						<div class="slider__img">
+							<img src="./images/rev1.jpg" alt="">
+						</div>
+						<div class="slider__text">
+							<p class="slider__feedback">Вирішальним аргументом на користь вибору кіношколи UFS стали кілька факторів: спеціальність "кінорежисура", строк навчання, викладачі та комунікація з кіностудією. Навчання в школі поклало початок формуванню уявлення про професію, дало необхідні знання та навички для початку роботи режисером і другим режисером: тільки за час навчання зняла як режисер три короткометражні фільми та працювала другим режисером у серіалі.</p>
+							<p class="slider__feedback">Ви навчили бути сміливими й рішучими, а в життя та кар'єрі намітився новий виток завдяки отриманому в школі досвіду. UFS - це можливість «піднятися ліфтом» на поверх кіновиробництва, поки інші «йдуть по сходах».</p>
+							<p class="slider__auth">Юлія Дегліна, режисерка</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__img">
+							<img src="./images/rev2.jpg" alt="">
+						</div>
+						<div class="slider__text">
+							<p class="slider__feedback">Під час навчання розумієш, що кіно - не місце для необґрунтованого самозамилування, а навчання в школі - не розважальна прогулянка, хоч і повна веселих і яскравих моментів. Викладачі школи можуть дати вам те, чого ви хочете, але варто пам'ятати, що UFS - це контрастний душ для тих, хто не знає, чого він хоче.</p>
+							<p class="slider__auth">Сергій Арнаутов, актор</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__img">
+							<img src="./images/rev3.jpg" alt="">
+						</div>
+						<div class="slider__text">
+							<p class="slider__feedback">UFS - кіношкола, де можна розкрити талант і отримати старт для успішної кар'єри: я, наприклад, після навчання знайшла агента і стала активно зніматися у кіно. Потім зрозуміла, що хочу рухатися далі та поїхала вчитися до New York Film Academy у США. У школі я навчилася бути чутливою і зібраною, емоційною і дисциплінованою, краще розуміти себе і легше взаємодіяти з іншими людьми. Зникли страхи, у мене з'явилася «друга сім'я» і я навчилася працювати у команді. І закохалася в професію ще більше, а найкращий спогад й перший в житті подібний досвід - підготовка до вистави й гра на сцені.</p>
+							<p class="slider__feedback">Це незабутні відчуття і я знову хочу це повторити під керівництвом куратора акторського курсу Максима Михайличенка. У нас була чудова група, в школі - талановиті викладачі, а всі знайомства виявилися корисними як для професійного, так і для особистісного розвитку.</p>
+							<p class="slider__auth">Марина Бородина, акторка</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__img">
+							<img src="./images/rev4.jpg" alt="">
+						</div>
+						<div class="slider__text">
+							<p class="slider__feedback">На вибір кіношколи UFS вплинули імідж кіностудії FILM.UA, на території якої я раніше знімав свій телепроект, і знайомство з професіоналом своєї справи, засновником і керівником школи Альоною, з командою якої ми досі співпрацюємо на багатьох проектах. Завдяки школі, я розширив діапазон моїх ремесел і зрозумів, що мені подобається поєднувати роботу в кадрі й за кадром одночасно. Як актор, я знявся в багатьох вітчизняних і міжнародних кіносеріальних проектах і рекламах.</p>
+							<p class="slider__feedback">UFS - найкраща база для підготовки фахівців медіа-індустрії та найкраще місце, де я коли-небудь навчався. Тут відбулося найнесподіваніше знайомство - ще одне знайомство з самим собою, тобто ще одним чуваком, який живе в мені.</p>
+							<p class="slider__auth">Сергій Арнаутов, актор</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__img">
+							<img src="./images/rev5.jpg" alt="">
+						</div>
+						<div class="slider__text">
+							<p class="slider__feedback">UFS - це перший крок до розуміння професії, тренувальна база "космонавтів". До вступу я викладав фізичне виховання, а завдяки кіношколі став професійним актором. Я отримую задоволення від професії, мене запрошують працювати в телевізійні проекти та кіно. Завдяки школі я потрапив в коло цікавих та творчих людей, де кожен заслуговує на повагу.</p>
+							<p class="slider__auth">Євген Рачок, актор</p>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__img">
+							<img src="./images/rev6.jpg" alt="">
+						</div>
+						<div class="slider__text">
+							<p class="slider__feedback">Школа привабила можливістю працювати на кіностудії після закінчення. Так і вийшло: я був випускником першого року, а зараз - куратор курсу filmmaking. :) Завдяки UFS я познайомився з новими людьми, працював на різних проектах та отримав практичні знання з режисури. Навчився швидко приймати рішення, орієнтуватися на ринку, бути режисером.</p>
+							<p class="slider__feedback">UFS - це найшвидший шлях на знімальний майданчик і єдине місце, де можна швидко знайти нову професію, нових друзів і відразу почати працювати у кіновиробництві.</p>
+							<p class="slider__auth">Павло Цибенко, режисер</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="price">
+			<div class="container">
+				<h2 class="price__title">Стоимость обучения</h2>
+				<p class="price__subtitle">Оплата за навчання здійснюється за кожен блок.</p>
+				<div class="price__wrapper">
+					<div class="price__item">
+						<h4 class="price__item-title">При оплаті до 15 липня</h4>
+						<span class="price__item-price">5000 грн</span>
+						<p class="price__time">за 1 месяц</p>
+						<a class="price__btn btn" href="#">Зареєструватись</a>
+					</div>
+					<div class="price__item unset">
+						<h4 class="price__item-title">При оплаті після 15 липня</h4>
+						<span class="price__item-price">5000 грн</span>
+						<p class="price__time">за 1 месяц</p>
+						<a class="price__btn btn" href="#">Зареєструватись</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<h2 class="info__title">Інформація для студентів</h2>
+			<div class="container">
+				<div class="info__row">
+					<p class="info__conditions">Условия поступления</p>
+					<div class="info__descr">
+						<ul>
+							<li>Прислать заявку на курс</li>
+							<li>Заполнить анкету </li>
+							<li>Пройти собеседование </li>
+						</ul>
+					</div>
+				</div>
+				<div class="info__row">
+					<p class="info__stages">Етапи вступу</p>
+					<div class="info__descr">
+						<p class="bold">Щоб стати студентом Ukrainian Film School вам потрібно: </p>
+						<ul>
+							<li>Надіслати заявку на обраний курс </li>
+							<li>Відповісти на лист із завданням: заповнити розгорнуту анкету та написати мотиваційний лист </li>
+							<li>Виконати письмове завдання: написати сценарій з діалогом чи розгорнутий синопсис (до 3 сторінок) </li>
+							<li>Пройти співбесіду </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__img">
+				<img src="./images/footer.png" alt="">
+			</div>
+			<p class="footer__text">&copy; UFS. Ukrainian Film School. Українська Кіношкола. All rights reserved. 2019</p>
+		</div>
+	</footer>
+	<div class="overlay">
+		<div class="popup">
+			<h2 class="popup__title">Заявка на вступ до школи</h2>
+			<span class="popup__close"></span>
+			<form class="form" action="mail/sendmail.php" method="POST">
+				<div class="form__field">
+					<input name="name" placeholder="Ваше имя" required="">
+					<input name="phone" placeholder="Ваш номер телефона" required="" type="tel">
+					<input name="email" placeholder="Ваш номер E-mail" required="" type="email">
+					<button name="name" class="button" type="submit">Отправить заявку</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/slick.min.js" ></script>
+	<script src="js/jquery.sendmail.js" ></script>
+	<script src="js/custom.js" ></script>
+</body>
+</html>
